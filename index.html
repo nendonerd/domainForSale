@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>This Domain is for Sale | 域名出售</title>
+    <style>
+        h2,
+        p {
+            font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+            font-size: 15px;
+            font-weight: 500;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <h2>
+        <p><span class="domain"></span> is currently for sale</p>
+        <p>Contact <i>nendonerd.dev@email.com</i> for more information</p>
+    </h2>
+    <h2>
+        <p><span class="domain"></span> 域名出售</p>
+        <p>联系 <i>nendonerd.dev@email.com</i> 咨询详情</p>
+    </h2>
+    <script>
+        for (let e of document.getElementsByClassName("domain")) {
+          e.innerHTML = window.location.host
+        }
+    </script>
+</body>
+
+</html>
